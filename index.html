@@ -13,7 +13,11 @@
         class="flex flex-col gap-5 border-2 py-8 px-12 w-4/6 bg-white"
         id="main"
       >
+      <div class="flex justify-between">
         <h1 class="text-6xl font-bold">Todo</h1>
+        <h2 class="text-3xl font-bold">U have 0 tasks pending</h2>
+      </div>
+        
         <div class="flex gap-3" id="list">
           <input
             type="text"
@@ -22,19 +26,10 @@
             id="inp"
           />
           <button id="btn"><img src="./add.png" alt="" class="h-16" /></button>
-        <!-- </div>
-        <div class="cursor-pointer flex gap-2 " id="todo">
-          <input type="checkbox" class="h-16 w-16 cursor-pointer" />
-          <div
-            class="border-2 h-16 text-2xl p-3 bg-gray-400 text-white w-full"
-          ></div>
-          <img
-            src="./delete.jpeg"
-            alt=""
-            class="h-14 hover:scale-75 cursor-pointer"
-          /> -->
         </div>
+       
       </div>
+      
     </div>
 
     <script src="script.js"></script>
