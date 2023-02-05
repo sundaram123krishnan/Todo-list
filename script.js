@@ -3,9 +3,11 @@ let main = document.getElementById("main");
 let list = document.getElementById("list");
 let inp = document.getElementById("inp");
 let clear = document.getElementById("clear");
+
 let arr = [];
 let cnt = 0;
 let cnt1 = 0;
+
 add.onclick = () => {
   if (inp.value != "") {
     let box = document.createElement("div");
@@ -46,12 +48,15 @@ add.onclick = () => {
       document.getElementsByTagName("h2")[0].textContent = `U have ${
         cnt - cnt1
       } tasks pending`;
+      if(cnt==cnt1){
+        cnt = 0;
+        cnt1 = 0;
+      }
     };
     document.getElementsByTagName(
       "h2"
     )[0].textContent = `U have ${cnt} tasks pending`;
-    arr.push(check);
   }
   inp.value = "";
 };
-inp.value="";
+inp.value = "";
