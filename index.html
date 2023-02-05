@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+    <div class="flex items-center justify-center mt-28">
+      <div
+        class="flex flex-col gap-5 border-2 py-8 px-12 w-4/6 bg-white"
+        id="main"
+      >
+        <h1 class="text-6xl font-bold">Todo</h1>
+        <div class="flex gap-3" id="list">
+          <input
+            type="text"
+            placeholder="Add your new todo"
+            class="border-2 w-full p-3 text-2xl h-16"
+            id="inp"
+          />
+          <button id="btn"><img src="./add.png" alt="" class="h-16" /></button>
+        <!-- </div>
+        <div class="cursor-pointer flex gap-2 " id="todo">
+          <input type="checkbox" class="h-16 w-16 cursor-pointer" />
+          <div
+            class="border-2 h-16 text-2xl p-3 bg-gray-400 text-white w-full"
+          ></div>
+          <img
+            src="./delete.jpeg"
+            alt=""
+            class="h-14 hover:scale-75 cursor-pointer"
+          /> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
