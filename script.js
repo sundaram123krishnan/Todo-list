@@ -4,7 +4,6 @@ let list = document.getElementById("list");
 let inp = document.getElementById("inp");
 let clear = document.getElementById("clear");
 
-let arr = [];
 let cnt = 0;
 let cnt1 = 0;
 
@@ -22,9 +21,14 @@ add.onclick = () => {
     box.style.gap = "3";
     box.style.justifyContent = "space-between";
     box.firstElementChild.type = "checkbox";
-    content.style.backgroundColor = "grey";
+    content.style.backgroundColor = "#D3D3D3";
+    content.style.fontFamily = "ui-sans-serif, system-ui";
+    content.style.color = "black";
+    content.style.fontWeight = "bold";
+    content.style.textTransform = "uppercase";
     content.innerHTML = inp.value;
     content.style.width = "100%";
+    content.style.borderRadius = "0.375rem";
     content.style.marginRight = "1.5rem";
     content.style.display = "flex";
     content.style.alignItems = "center";
@@ -48,7 +52,7 @@ add.onclick = () => {
       document.getElementsByTagName("h2")[0].textContent = `U have ${
         cnt - cnt1
       } tasks pending`;
-      if(cnt==cnt1){
+      if (cnt == cnt1) {
         cnt = 0;
         cnt1 = 0;
       }
@@ -56,6 +60,9 @@ add.onclick = () => {
     document.getElementsByTagName(
       "h2"
     )[0].textContent = `U have ${cnt} tasks pending`;
+    clear.onclick = () => {
+      location.reload();
+    };
   }
   inp.value = "";
 };
